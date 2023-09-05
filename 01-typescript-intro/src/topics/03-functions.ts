@@ -8,7 +8,8 @@ const addNumbersArrow = (a: number, b: number): string => {
     return `${a + b}`;
 }
 
-// Define a function 'multiply' that takes 'firstNumber' as a number, 'secondNumber' as an optional number (default is undefined), and 'base' as a number with a default value of 2
+// Define a function 'multiply' that takes 'firstNumber' as a number, 'secondNumber' as an optional number 
+// (default is undefined), and 'base' as a number with a default value of 2
 function multiply(firstNumber: number, secondNumber?: number, base: number = 2) {
     return firstNumber * base;
 }
@@ -18,14 +19,16 @@ function multiply(firstNumber: number, secondNumber?: number, base: number = 2) 
 // const multiplyResult: number = multiply(5);
 // console.log({ result, result2, multiplyResult })
 
-// Define an interface 'Character' with properties: name (string), hp (number), and showHp (a function that takes no arguments and returns void)
+// Define an interface 'Character' with properties: name (string), hp (number), and showHp 
+// (a function that takes no arguments and returns void)
 interface Character {
     name: string;
     hp: number;
     showHp: () => void;
 }
 
-// Define a function 'healCharacter' that takes a 'character' of type 'Character' and an 'amount' as a number to increase the character's hp
+// Define a function 'healCharacter' that takes a 'character' of type 'Character' and 
+// an 'amount' as a number to increase the character's hp
 const healCharacter = (character: Character, amount: number) => {
     character.hp += amount;
 }
